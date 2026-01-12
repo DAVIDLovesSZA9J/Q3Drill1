@@ -1,12 +1,13 @@
-        * {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+     * {
             font-family: 'Poppins';
         }
 
         body {
             display: flex;
-            flex-direction: column;
+            justify-content: center;   
             align-items: center;
-            padding-top: 50px;
+            min-height: 100vh;         
             background-image: url('https://cdn.wallpapersafari.com/12/27/1lOMPt.jpg');
             background-size: cover;
             background-position: center;
@@ -16,40 +17,52 @@
         }
 
         .calc-container {
-            background-color: #dcdcdc;
-            border: 2px  #888;
-            border-radius: 20px;
+            background-color: #00000073;
+            backdrop-filter: blur(3px);
+            border-radius: 30px;
             padding: 30px;
-            width: 400px;
+            width: 500px;
             text-align: center;
+            box-shadow: -2px -1px 13px 0px rgba(255, 255, 255, 0.356);
+            -webkit-box-shadow: -2px -1px 13px 0px rgba(255, 255, 255, 0.454);
+            -moz-box-shadow: -2px -1px 13px 0px rgba(255,255,255,0.75);
+            transition: transform 0.3s ease;
+        }
+        .calc-container:hover {
+            transform: translateY(-5px);
+        }
+        .calc-header h1 {
+            color: white;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.76);
+
         }
 
-        .calc-header {
-            background-color: #F0FFDF;
-            border: 1px solid #555;
-            border-radius: 15px;
-            padding: 10px;
-            font-family: 'serif';
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
 
         .btn-display {
-            background-color: #FFAAB8;
-            border: 1px solid black;
-            border-radius: 20px;
+            background-color: #ffffff;
+            border-radius: 30px;
             padding: 5px 25px;
             font-weight: bold;
+            color: black;
+            box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.76);
         }
 
         #result1 {
-            background-color: #222;
-            color: white;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
             font-size: 2.5rem;
             padding: 5px 20px;
-            border-radius: 5px;
+            border-radius: 10px;
             display: inline-block;
             margin-top: 20px;
             min-width: 100px;
             text-align: center;
+            box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.76);
+        }
+        p {
+            color: white;
         }
